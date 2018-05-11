@@ -22,8 +22,8 @@ Create Spritesheet:
 `giftext Cheetah.gif`  
 
 [giftext](http://giflib.sourceforge.net/giftext.html) is one of 12 tools from [libgif](http://giflib.sourceforge.net) and gives the info about the delay, it is hundred milliseconds.  
-[gifsicle](http://www.lcdf.org/gifsicle/) is an alternative to deal with gif's.
-gifsicle --info Cheetah.gif  
+[gifsicle](http://www.lcdf.org/gifsicle/) is an alternative to deal with gif's.  
+`gifsicle --info Cheetah.gif`  
 
 Now [ImageMagick](http://imagemagick.org/script/index.php) comes into play:  
 Split Gif-Frames  
