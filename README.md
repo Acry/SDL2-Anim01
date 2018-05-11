@@ -27,7 +27,7 @@ Create Spritesheet:
 
 Now [ImageMagick](http://imagemagick.org/script/index.php) comes into play:  
 Split Gif-Frames  
-`convert -coalesce Cheetah-0030.gif out%05d`
+`convert -coalesce Cheetah.gif out%05d`
 
 Create Sheet:  
 `montage out0000[0-7] -tile 4x2 -background transparent gepard_running.png`  
