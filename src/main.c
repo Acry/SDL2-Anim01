@@ -30,11 +30,11 @@
 //BEGIN CPP DEFINITIONS
 #define TZ_H	512/4
 #define TZ_V	252/2
-#define WHITE 255,255,255,255
-#define BLACK 0,0,0,255
-#define RED   255,0,0,255
-#define WW 550
-#define WH (WW/16)*12
+#define WHITE 	255,255,255,255
+#define BLACK 	0,0,0,255
+#define RED   	255,0,0,255
+#define WW 	TZ_H * 2.5
+#define WH 	TZ_V * 2.5
 //END   CPP DEFINITIONS
 
 //BEGIN DATASTRUCTURES
@@ -51,8 +51,6 @@ SDL_Texture    *cheetah		= NULL;
 SDL_Rect 	cheetah_dst;
 SDL_Rect 	cheetah_src;
 //END 	VISIBLES
-
-SDL_Point	mouse;
 
 //END   GLOBALS
 
@@ -135,6 +133,7 @@ while(running){
 	accumulator += deltaTime;
 	if (accumulator>=0.1){
 		cheetah_src.x+=TZ_H;
+		
 		if (cheetah_src.x>TZ_H*3){
 			cheetah_src.x=0;
 			if (cheetah_src.y==0)
@@ -142,15 +141,16 @@ while(running){
 			else
 				cheetah_src.y=0;
 		}
+		
 		accumulator=0;
 		
 	}
 
 	//BEGIN RENDERING
-	SDL_SetRenderDrawColor(Renderer, WHITE);
-	SDL_RenderClear(Renderer);
-	SDL_RenderCopy(Renderer, cheetah, &cheetah_src, &cheetah_dst);
-	SDL_RenderPresent(Renderer);
+	SDL_SetRenderDrawColor	(Renderer, WHITE);
+	SDL_RenderClear		(Renderer);
+	SDL_RenderCopy		(Renderer, cheetah, &cheetah_src, &cheetah_dst);
+	SDL_RenderPresent	(Renderer);
 	//END   RENDERING
 }
 //END   MAIN LOOP
@@ -165,15 +165,10 @@ return EXIT_SUCCESS;
 //BEGIN FUNCTIONS
 void assets_in(void)
 {
-
-
-// 	SDL_QueryTexture(logo, NULL, NULL, &logo_dst.w, &logo_dst.h);
-
 	
 	//BEGIN CHEETAH
 	temp_surface = IMG_Load("./assets/gfx/Cheetah.png");
 	cheetah= SDL_CreateTextureFromSurface(Renderer, temp_surface);
-	//Width = 125, Height = 52
 	cheetah_dst.w=TZ_H*2;
 	cheetah_dst.h=TZ_V*2;
 	cheetah_dst.x=ww/2-cheetah_dst.w/2;
