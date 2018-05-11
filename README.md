@@ -21,7 +21,7 @@ Cheetah: unknown artist.
 Create Spritesheet:  
 `giftext Cheetah.gif`  
 
-[giftext](http://giflib.sourceforge.net/giftext.html) is one of 12 tools from [libgif](http://giflib.sourceforge.net) and gives the info about the delay, it is ten milliseconds.  
+[giftext](http://giflib.sourceforge.net/giftext.html) is one of 12 tools from [libgif](http://giflib.sourceforge.net) and gives the info about the delay, it is hundred milliseconds.  
 [gifsicle](http://www.lcdf.org/gifsicle/) is an alternative to deal with gif's.
 gifsicle --info Cheetah.gif  
 
