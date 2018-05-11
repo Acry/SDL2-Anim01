@@ -1,4 +1,5 @@
 Cheetah Animation
+![Screenshot](./src/gfx/Cheetah.gif)
 
 This is a small SDL2 Demo and it does demonstrate how to...  
 
@@ -8,9 +9,6 @@ This is a small SDL2 Demo and it does demonstrate how to...
 
 Useful links:  
 [SDL2](https://www.libsdl.org/) [SDL-Discourse](https://discourse.libsdl.org) [Example Code](https://gist.github.com/Acry/baa861b8e370c6eddbb18519c487d9d8)
-
-Screenshot:  
-![Screenshot](./src/gfx/Cheetah.gif)
 
 Assets  
 Cheetah: unknown artist.
