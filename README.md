@@ -1,8 +1,6 @@
-Sprite-Animation 05
+Cheetah Animation
 
-This is a C-SDL Sprite Animation Demo
-
-This is a small SDL2 Demo and it does demonstrate how...  
+This is a small SDL2 Demo and it does demonstrate how to...  
 
   * create a spritesheet from a gif
   * load that sheet
