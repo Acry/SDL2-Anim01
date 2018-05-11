@@ -1,5 +1,5 @@
-Cheetah Animation
-![Screenshot](./src/gfx/Cheetah.gif)
+### Cheetah Animation  
+![Running Cheetah](./src/gfx/Cheetah.gif)
 
 This is a small SDL2 Demo and it does demonstrate how to...  
 
