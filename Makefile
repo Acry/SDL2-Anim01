@@ -1,4 +1,4 @@
-CFLAGS   = -Wall -Wextra -mtune=native `sdl2-config --cflags`
+CFLAGS   = -Wall -Wextra -no-pie -mtune=native `sdl2-config --cflags`
 LDFLAGS  = `sdl2-config --libs` -lSDL2_image -lm
 
 .SUFFIXES:
